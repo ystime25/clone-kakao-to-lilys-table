@@ -32,16 +32,17 @@
     <p class="welcome-header__text"> If you have a Lily's Table Account, log in with your email or phone number.
   </header>
   
-  <Form class="login-form">
-    <input type="text" placeholder="Email or phone number"/>
-    <input type="password" placeholder="Password"/>
+  <Form action="friends.html" method="GET" class="login-form">
+    <input name="username" type="text" placeholder="Email or phone number"/>
+    <input name="password" type="password" placeholder="Password"/>
     <input type="submit" value="Log In"/>
     <input type="submit" value="Sign Up"/>
   </Form>
-  <span>
-    <a class="find-account" href="#">Find Account</a> 
-    or 
-    <a class="find-password" href="#"> Password</a></span>
+  <div class="find-account-info">
+    <span>Find</span>
+    <a class="find-account" href="#">Account</a> 
+    <span>or</span> 
+    <a class="find-password" href="#"> Password</a></div>
   <script 
   src="https://kit.fontawesome.com/b5d36d5b86.js" 
   crossorigin="anonymous">
