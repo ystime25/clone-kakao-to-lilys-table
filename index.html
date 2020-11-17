@@ -4,45 +4,39 @@
     <link rel="stylesheet" href="css/styles.css"/>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Welcome to Lily's Table</title>
+    <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/logo.png"/>
+    <title>Lily's Table - 나의 식사 지킴이</title>
+    <meta name="description" content="배고프지만 메뉴를 못정한 자들을 위한 릴리의 픽"/>
+    <meta property="og:title" content="Lily's Table">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="img/logo.png">
+    <meta property="og:description" content="메뉴를 못 정한 자들을 위한 릴리의 픽."> 
 </head>
 <body>
-  <div class="status-bar">
+  
+  <div id="status-bar">
     <div class="status-bar__column">
       <span>SKT</span>
-      <!--Service Provider-->
       <i class="fas fa-wifi"></i>
-      <!--Internet Type-->
     </div>
     <div class="status-bar__column">
       <span>10:05</span>
-      <!-- Time status-->
     </div>
     <div class="status-bar__column">
-        <span>93%</span>
-        <!-- Battery Status Icon-->
-        <i class="fas fa-battery-full fa-lg"></i>
-        <!-- Charging Status icon-->
-        <i class="fas fa-bolt"></i>
+      <span>93%</span>
+      <i class="fas fa-battery-full"></i>
+      <i class="fas fa-bolt"></i>
     </div>
   </div>
 
-  <header class="welcome-header">
-    <h1 class="welcome-header__title"> Welcome to Lily's Table </h1>
-    <p class="welcome-header__text"> If you have a Lily's Table Account, log in with your email or phone number.
+  <header class="login-header">
+    <h1 class="login-header__title">릴리의 식탁에 오신 것을 환영합니다</h1>
+    <p class="login-header__text">사용하던 릴리의 식탁 계정이 있다면 
+      이메일 또는 이메일 또는 전화번호로 로그인해 주세요.
+    </p>
   </header>
-  
-  <Form action="friends.html" method="GET" class="login-form">
-    <input name="username" type="text" placeholder="Email or phone number"/>
-    <input name="password" type="password" placeholder="Password"/>
-    <input type="submit" value="Log In"/>
-    <input type="submit" value="Sign Up"/>
-  </Form>
-  <div class="find-account-info">
-    <span>Find</span>
-    <a class="find-account" href="#">Account</a> 
-    <span>or</span> 
-    <a class="find-password" href="#"> Password</a></div>
+
   <script 
   src="https://kit.fontawesome.com/b5d36d5b86.js" 
   crossorigin="anonymous">
