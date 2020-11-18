@@ -5,17 +5,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/logo.png"/>
-    <title>Lily's Table - 나의 식사 지킴이</title>
-    <meta name="description" content="배고프지만 메뉴를 못정한 자들을 위한 릴리의 픽"/>
+    <title>Welcome to Lily's Table</title>
+    <meta name="description" content="To eat and what to eat, that is the problem."/>
     <meta property="og:title" content="Lily's Table">
     <meta property="og:type" content="website">
     <meta property="og:url" content="">
     <meta property="og:image" content="img/logo.png">
-    <meta property="og:description" content="메뉴를 못 정한 자들을 위한 릴리의 픽."> 
+    <meta property="og:description" content="To eat and what to eat, that is the problem."> 
 </head>
 <body>
   
-  <div id="status-bar">
+  <div class="status-bar">
     <div class="status-bar__column">
       <span>SKT</span>
       <i class="fas fa-wifi"></i>
@@ -31,11 +31,23 @@
   </div>
 
   <header class="login-header">
-    <h1 class="login-header__title">릴리의 식탁에 오신 것을 환영합니다</h1>
-    <p class="login-header__text">사용하던 릴리의 식탁 계정이 있다면 
-      이메일 또는 이메일 또는 전화번호로 로그인해 주세요.
+    <h1 class="login-header__title">Welcome to Lily's table</h1>
+    <p class="login-header__text">If you have a Lily's Account, log in with your email or phone number
     </p>
   </header>
+
+  <form action="friends.html" method="GET" id="login-form">
+    <input required name="username" type="text" placeholder="Email or phone number"/>
+    <input required name="password" type="password" placeholder="Password"/>
+    <input type="submit" value="Log In"/>
+    <input required type="submit" value="Sign Up"/>
+    <div class="find-info">
+      <span>Find Lily's</span>
+      <a href="#">Account</a>
+      <span>or</span>
+      <a href="#">Password</a>
+    </div>  
+  </form>
 
   <script 
   src="https://kit.fontawesome.com/b5d36d5b86.js" 
