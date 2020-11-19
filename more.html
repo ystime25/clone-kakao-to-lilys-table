@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" sizes="16x16 32x32 64x64" href="img/logo.png"/>
-    <title>Find - Lily's Table</title>
+    <title>More - Lily's Table</title>
     <meta name="description" content="To eat and what to eat, that is the problem."/>
     <meta property="og:title" content="Lily's Table">
     <meta property="og:type" content="website">
@@ -31,9 +31,10 @@
   </div>
 
   <header class="screen-header">
-    <h1 class="screen-header__title">Find</h1>
+    <h1 class="screen-header__title">More</h1>
     <div class="screen-header__icons">
       <span><i class="fas fa-search fa-lg"></i></span>
+      <span><i class="fas fa-music fa-lg"></i></span>
       <span>
         <div class="screen-header__update"></div>
         <a href="settings.html"><i class="fas fa-cog fa-lg "></i></a>
@@ -41,75 +42,68 @@
     </div>
   </header>
 
-  <main class="main-screen">
+  <main class="main-screen more-screen">
+    <div class="user-component">
+        <div class="user-component__column">
+          <img src="img/profile_example.jpg" class="user-component__avatar user-component__avatar--xl"/>
+          <div class="user-component__text">
+            <h4 class="user-component__nickname">Youn-Seok</h4>
+            <h6 class="user-component__message">+82 4617-8797<i class="fas fa-exclamation-circle"></i></h6>
+          </div>
+        </div>
+        <div class="user-component__column"><i class="fab fa-elementor fa-2x"></i></div>
+    </div>
+    <div class="icon-row">
+        <div class="icon-row__icon">
+            <i class="far fa-calendar-check"></i>
+            <span>Calendar</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="fas fa-check-circle"></i>
+            <span>Lily's Pick</span>
+        </div>
+        <div class="icon-row__icon">
+            <i class="far fa-smile-wink"></i>
+          <span>Emoticons</span>
+        </div>
+        <div class="icon-row__icon">
+          <i class="fas fa-palette"></i>
+          <span>Themes</span>
+        </div>
+    </div>
     <div class="icon-row">
       <div class="icon-row__icon">
-          <i class="fas fa-qrcode"></i>
-          <span>QR Code</span>
+        <i class="fas fa-leaf"></i>
+        <span>Account</span>
       </div>
       <div class="icon-row__icon">
-          <i class="far fa-address-book "></i>
-          <span>Add by contacts</span>
+        <i class="far fa-credit-card"></i>
+        <span>Ly-Pay</span>
       </div>
       <div class="icon-row__icon">
-        <i class="fas fa-fingerprint"></i>
-        <span>Add by ID</span>
+        <i class="fas fa-drumstick-bite"></i>
+        <span>Delivery</span>
       </div>
       <div class="icon-row__icon">
-        <i class="far fa-envelope"></i>
-        <span>Intive</span>
+        <i class="fas fa-border-all"></i>
+        <span>Show All</span>
       </div>
     </div>
-
-    <div class="recommended-friends">
-      <h6 class="recommended-friends__title">Recommended Friends</h6>
-      <span>You have no recommended friends.</span>
-    </div>
-
-    <div class="open-chat">
-      <div class="open-chat__header">
-        <h4>Open Chat</h4>
-        <span>Go to Openchat Home<i class="fas fa-chevron-right fa-xs"></i></span>
-      </div>
-      <div class="open-post">
-        <div class="open-post__column">
-          <h5 class="open-post__title">#Tteokbokki</h5>
-          <h6 class="open-post__hashtag">#tteokbokki#korean#spicy</h6>
-          <div class="open-post__member">
-            <img src="img/profile_example2.jpg"/>
-            <span class="open-post__member-count">2409 Members</span>
-            <div class="divider"></div>
-            <span class="open-post__member-status">Active</span>
+    <div class="suggestions">
+      <h4 class="suggestions__title">Suggestions</h4>
+      <div class="suggestions__apps">
+        <div class="suggestions__app">
+          <div class="suggestions__app-icon">
+            <img src="https://www.speconomy.com/news/data/20200413/p1065603119250449_135_thum.png"/>
           </div>
+          <span class="suggestions__app-name">Baemin</span>
         </div>
-        <div class="open-post__column">
-          <div class="open-post__thumbnail">
-            <img src="img/tteokbokki.jpg"/>
-            <div class="open-post__likes">
-              <i class="fas fa-heart fa-xs"></i><span>501</span>
+        <div class="suggestions__app">
+            <div class="suggestions__app-icon">
+              <img src="https://yt3.ggpht.com/ytc/AAUvwngvp9uXfCHI28O9Tmqj9kfC3tdcrN2XO_pW1N1MhA=s900-c-k-c0x00ffffff-no-rj"/>
             </div>
+            <span class="suggestions__app-name">Yogiyo</span>
           </div>
-        </div>
-      </div>
-      <div class="open-post">
-        <div class="open-post__column">
-          <h5 class="open-post__title">#Cream_Pasta</h5>
-          <h6 class="open-post__hashtag">#creampasta#italian#cream</h6>
-          <div class="open-post__member">
-            <img src="img/profile_example.jpg"/>
-            <span class="open-post__member-count">1219 Members</span>
-            <div class="divider"></div>
-            <span class="open-post__member-status">Active</span>
-          </div>
-        </div>
-        <div class="open-post__column">
-          <div class="open-post__thumbnail">
-            <img src="img/cream-pasta.jpg"/>
-            <div class="open-post__likes">
-              <i class="fas fa-heart fa-xs"></i><span>203</span>
-            </div>
-          </div>
-        </div>
       </div>
     </div>
   </main>
@@ -127,7 +121,7 @@
         </a>
       </li>
       <li class="nav__btn">
-        <a class="nav__link" href="find.html"><i class="fas fa-hashtag fa-lg"></i></a>
+        <a class="nav__link" href="find.html"><i class="fas fa-hashtag"></i></a>
       </li>
       <li class="nav__btn">
         <a class="nav__link" href="more.html">

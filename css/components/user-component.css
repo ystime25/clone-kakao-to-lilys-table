@@ -35,6 +35,8 @@
 }
 
 .user-component__message {
+  display: flex;
+  align-items: center;
   margin-top: 8px;
   font-size: 15px;
   color: rgba(0, 0, 0, 0.5);
@@ -54,4 +56,14 @@
 
 .user-component__conversation {
   margin-bottom: 10px;
+}
+
+.fa-exclamation-circle {
+  color: mediumaquamarine;
+  font-size: 13px;
+  margin-left: 5px;
+}
+
+.fa-elementor {
+  color: lightpink;
 }

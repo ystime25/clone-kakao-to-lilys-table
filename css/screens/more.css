@@ -1,0 +1,41 @@
+.more-screen .icon-row {
+  margin-top: 30px;
+}
+
+.suggestions {
+  border-top: 1px solid lightpink;
+  margin-top: var(--horizontal-space);
+  padding-top: var(--horizontal-space);
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.suggestions__title {
+  margin-bottom: var(--horizontal-space);
+}
+
+.suggestions__apps {
+  display: flex;
+}
+
+.suggestions__app {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 30px;
+}
+
+.suggestions__app-icon img {
+  width: 60px;
+  height: 60px;
+  border-radius: 10px;
+}
+
+.suggestions__app-icon img {
+  margin-bottom: 10px;
+}
+
+.suggestions__app-name {
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.5);
+}
