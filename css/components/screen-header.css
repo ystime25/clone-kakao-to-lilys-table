@@ -1,4 +1,9 @@
 .screen-header {
+  position: fixed;
+  top: 10px;
+  width: 100%;
+  background-color: white;
+  z-index: 1;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -14,17 +19,26 @@
   margin-left: 15px;
 }
 
-.friends-screen {
-  padding: 0px var(--horizontal-space);
-}
-
 .screen-header__update {
   position: absolute;
-  top: 55px;
+  top: 25px;
   right: 21px;
   display: flex;
   width: 4px;
   height: 4px;
   border-radius: 50%;
   background-color: mediumaquamarine;
+}
+
+@keyframes z-rotation {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+.screen-header__icons .fa-cog:hover {
+  animation: z-rotation 2s linear infinite;
 }

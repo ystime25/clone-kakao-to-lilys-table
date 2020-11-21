@@ -19,10 +19,26 @@
   color: rgba(0, 0, 0, 0.7);
 }
 
+@keyframes notification-animation {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: translateY(-1px) rotateZ(-10deg);
+  }
+  50% {
+    transform: translateY(-1px) rotateZ(10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
 .nav__notification {
   position: absolute;
   left: 12px;
   bottom: 12px;
+  animation: notification-animation 1s infinite;
 }
 
 .nav__issue {
@@ -34,4 +50,31 @@
   height: 4px;
   border-radius: 50%;
   background-color: mediumaquamarine;
+}
+
+@keyframes rise-up {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+    transform: none;
+  }
+}
+
+.nav__btn {
+  transform: translateY(50px);
+  opacity: 0;
+  animation: rise-up 0.5s ease-in-out forwards;
+}
+
+.nav__btn:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.nav__btn:nth-child(3) {
+  animation-delay: 0.4s;
+}
+.nav__btn:last-child {
+  animation-delay: 0.6s;
 }
